@@ -10,6 +10,7 @@ namespace Tempo
         {
             Stopwatch crono1 = new Stopwatch();
             crono1.Start();
+            Thread.Sleep(500);
 
             Stopwatch crono2 = new Stopwatch();
         }
