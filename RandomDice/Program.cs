@@ -8,6 +8,8 @@ namespace RandomDice
         {
             Console.Write("Enter a number n: ");
             int n = int.Parse(Console.ReadLine());
+
+            Random number = new Random();
         }
     }
 }
