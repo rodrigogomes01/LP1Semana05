@@ -10,6 +10,15 @@ namespace RandomDice
             int n = int.Parse(Console.ReadLine());
 
             Random number = new Random();
+
+            int total = 0;
+
+            for (int i = 0; i < n; i++)
+            {
+                total += number.Next(1,7);
+            }
+
+            Console.WriteLine("Total: " + total);
         }
     }
 }
