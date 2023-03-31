@@ -11,7 +11,9 @@ namespace LowerUnion
             args[i] = args[i].ToLower();
         }
         
-        Console.WriteLine(string.Join(", ", args));
+        for (int i = 0; i < args.Length; i++)
+        
+                Console.WriteLine(args[i]);
         }
     }
 }
