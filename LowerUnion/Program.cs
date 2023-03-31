@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace LowerUnion
 {
@@ -12,10 +13,15 @@ namespace LowerUnion
         }
         
         Array.Sort(args);
-        
+
+        StringWriter underscore = new StringWriter();
         for (int i = 0; i < args.Length; i++)
 
-                Console.WriteLine(args[i]);
+                underscore.Write(args[i]);
+                if (i != args.Length - 1)
+                {
+                    underscore.Write("_");
+                }
         }
     }
 }
