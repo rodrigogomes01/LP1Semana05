@@ -11,8 +11,10 @@ namespace LowerUnion
             args[i] = args[i].ToLower();
         }
         
-        for (int i = 0; i < args.Length; i++)
+        Array.Sort(args);
         
+        for (int i = 0; i < args.Length; i++)
+
                 Console.WriteLine(args[i]);
         }
     }
